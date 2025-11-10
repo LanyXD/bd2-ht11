@@ -1,0 +1,122 @@
+/* ====== ESTILO GENERAL ====== */
+QWidget {
+    background-color: #f5f6fa;
+    font-family: "Segoe UI";
+    font-size: 10.5pt;
+    color: #2f3640;
+}
+
+/* ====== LABELS ====== */
+QLabel {
+    color: #2f3640;
+    font-weight: 500;
+}
+
+/* ====== LINE EDITS / INPUTS ====== */
+QLineEdit, QDateEdit, QSpinBox, QDoubleSpinBox, QComboBox {
+    background-color: #ffffff;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    padding: 4px 8px;
+    selection-background-color: #487eb0;
+}
+
+QLineEdit:focus, QComboBox:focus, QDateEdit:focus {
+    border: 1px solid #273c75;
+}
+
+/* ====== BUTTONS ====== */
+QPushButton {
+    background-color: #273c75;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: #40739e;
+}
+
+QPushButton:pressed {
+    background-color: #192a56;
+}
+
+/* ====== TABLES ====== */
+QTableWidget {
+    background-color: #ffffff;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    gridline-color: #dcdde1;
+    selection-background-color: #487eb0;
+    selection-color: #ffffff;
+}
+
+QHeaderView::section {
+    background-color: #273c75;
+    color: white;
+    padding: 4px;
+    border: none;
+    border-right: 1px solid #192a56;
+    font-weight: 600;
+}
+
+QTableCornerButton::section {
+    background-color: #273c75;
+}
+
+/* ====== GROUPBOX ====== */
+QGroupBox {
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding: 10px;
+    font-weight: bold;
+    color: #273c75;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 12px;
+    padding: 0 4px;
+}
+
+/* ====== SCROLLBARS ====== */
+QScrollBar:vertical {
+    border: none;
+    background: #f0f0f0;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background: #a4b0be;
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #718093;
+}
+
+/* ====== CHECKBOX ====== */
+QCheckBox {
+    spacing: 6px;
+}
+
+QCheckBox::indicator {
+    width: 14px;
+    height: 14px;
+}
+
+QCheckBox::indicator:unchecked {
+    border: 1px solid #718093;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+QCheckBox::indicator:checked {
+    border: 1px solid #273c75;
+    background-color: #487eb0;
+}
